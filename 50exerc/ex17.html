@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function verificarMultiplo() {
+            let num = parseInt(prompt("Digite um número: "))
+            let resultado = ''
+
+            if(num % 3 === 0) {
+                resultado += "Múltiplo de 3"
+            }
+
+            if(num % 5 === 0){
+                if (resultado != '') {
+                    resultado += ' e Múltiplo de 5'
+                } else {
+                    resultado = 'Múltiplo de 5'
+                }
+            }
+
+            if (resultado == '') {
+                alert('Não é múltiplo de 3 nem de 5')
+            } else {
+                alert(resultado)
+            }
+        }
+
+        verificarMultiplo()
+    </script>
+</body>
+</html>
